@@ -140,32 +140,30 @@ ssh -T git@github.com
   当仓库创建完毕后，界面将和下方一致：
 
   ```bash
-        Quick setup — if you’ve done this kind of thing before
-        or
-        https://github.com/junjiecjj/Demo.git
-        Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+  Quick setup — if you’ve done this kind of thing before
+  or
+  https://github.com/junjiecjj/Demo.git
+  Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
 
-        …or create a new repository on the command line
-        echo "# Demo" >> README.md
-        git init
-        git add README.md
-        git commit -m "first commit"
-        git branch -M main
-        git remote add origin https://github.com/junjiecjj/Demo.git
-        git push -u origin main
-
-
-        …or push an existing repository from the command line
-        git remote add origin https://github.com/junjiecjj/Demo.git
-        git branch -M main
-        git push -u origin main
+  …or create a new repository on the command line
+  echo "# Demo" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/junjiecjj/Demo.git
+  git push -u origin main
 
 
-        …or import code from another repository
-        You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+  …or push an existing repository from the command line
+  git remote add origin https://github.com/junjiecjj/Demo.git
+  git branch -M main
+  git push -u origin main
+
+
+  …or import code from another repository
+  You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
   ```
-
-  ![图片](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69ZjibomwXr64KElnstn6TfguJ6pyCHVuJkYnKOib4dBj3UCUj6x6picTQfpDScHKiaPphD7dYJkd4dZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 #### 在 VScode 中初始化本地仓库并推送到远程
 
