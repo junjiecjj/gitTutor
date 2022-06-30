@@ -135,6 +135,8 @@ ssh -T git@github.com
 
   恭喜！您已经在 GitHub.com 中建立了您的第一个仓库，网址为`https://github.com/junjiecjj/gitTutor`,这个网址后面在 VScode 中或者终端中推送远程仓库时需要用到。
 
+  > 注意，远程仓库的名字，也就是`https://github.com/junjiecjj/gitTutor`中的 gitTutor 可以与本地的仓库名字不一样，这里写成了一样，待会在 gitea 上的仓库名字我们取为`GitTutor`.
+
   当仓库创建完毕后，界面将和下方一致：
 
   ```bash
@@ -201,8 +203,8 @@ ssh -T git@github.com
 
   ![图2](./picture/深度截图_选择区域_20220630140101.png)
 
-- <font face="黑体" color=green size=5>步骤 3：给远程仓库的取名</font>
-  此时回车，会让你在本地给远程仓库的取一个名称，输入 origin，可以是任意的，但是如果有多个远程仓库，则各个远程仓库的名字不能一样。
+- <font face="黑体" color=green size=5>步骤 3：给远程仓库取代号</font>
+  此时回车，会让你在本地给远程仓库的取一个代号，输入 origin，可以是任意的，但是如果有多个远程仓库，则各个远程仓库的代号不能一样。
   ![图2](./picture/深度截图_选择区域_20220630174958.png)
 
   `从GitHub添加远程存储库`成功，
@@ -222,15 +224,37 @@ ssh -T git@github.com
   ![图2](./picture/深度截图_选择区域_20220630180238.png)
   完成.
 
-一个本地仓库可以关联多个远程仓库，比如上述是建立了和 Github 上网址为`https://github.com/junjiecjj/gitTutor`取名为`origin`的远程连接，下面我们建立本地仓库与 Gitea 的另一个连接。
+**一个本地仓库可以关联多个远程仓库，比如上述是建立了和 Github 上网址为`https://github.com/junjiecjj/gitTutor`取名为`origin`的远程连接，下面我们建立本地仓库与 Gitea 的另一个连接。**
 
-- <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
+- <font face="黑体" color=green size=5>步骤 1：在 gitea 中新建一个空白仓库</font>
+  ![图2](./picture/深度截图_选择区域_20220630181050.png)
+  并将远程仓库取名为`GitTutor`,并下拉到最后点击`创建仓库`，注意，远程仓库的名字可以和本地仓库的名字不一致。
+  ![图2](./picture/深度截图_选择区域_20220630181300.png)
+  此时页面跳转为：
+  ![图2](./picture/深度截图_选择区域_20220630181920.png)
+  在 Gitea 上创建空仓库 `http://git.sysu-coin.top/junjie/GitTutor.git`成功,接下来在 VSCode 中添加第二个非 Github 远程仓库时需要用到这个网址。
 
-- <font face="黑体" color=green size=5>步骤 2：在 VSCode 中将本地文件夹初始化为仓库</font>
+- <font face="黑体" color=green size=5>步骤 2：在 VSCode 中添加远程存储库</font>
+  ![图2](./picture/深度截图_选择区域_20220630182101.png)
 
-- <font face="黑体" color=green size=5>步骤 3：在 VSCode 中将本地文件夹初始化为仓库</font>
+  ![图2](./picture/深度截图_选择区域_20220630182155.png)
+  将`http://git.sysu-coin.top/junjie/GitTutor.git`复制到`提供存储库URL或者选择存储库源`方框，然后回车。
+  这时提示需要给远程仓库取代号，注意这时不能在取为`origin`，我们取为`origin-coin`
+  ![图2](./picture/深度截图_选择区域_20220630182429.png)
+  注意这时不能在取为`origin`，我们取为`origin-coin`，回车，则添加第二个远程仓库成功，并取名为`origin-coin`。
+  ![图2](./picture/深度截图_选择区域_20220630182606.png)
 
-- <font face="黑体" color=green size=5>步骤 4：在 VSCode 中将本地文件夹初始化为仓库</font>
+- <font face="黑体" color=green size=5>步骤 3：在 VSCode 中 commit 刚刚改过的仓库。</font>
+
+  ![图2](./picture/深度截图_选择区域_20220630182938.png)
+  添加 comment,提示做过哪些更改,然后点击勾勾。
+  ![图2](./picture/深度截图_选择区域_20220630183202.png)
+
+- <font face="黑体" color=green size=5>步骤 4：推送到第二个远程仓库</font>
+
+  ![图2](./picture/.png)
+
+  ![图2](./picture/.png)
 
 - <font face="黑体" color=green size=5>步骤 5：在 VSCode 中将本地文件夹初始化为仓库</font>
 
