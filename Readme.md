@@ -241,7 +241,7 @@ ssh -T git@github.com
   将`http://git.sysu-coin.top/junjie/GitTutor.git`复制到`提供存储库URL或者选择存储库源`方框，然后回车。
   这时提示需要给远程仓库取代号，注意这时不能在取为`origin`，我们取为`origin-coin`
   ![图2](./picture/深度截图_选择区域_20220630182429.png)
-  注意这时不能在取为`origin`，我们取为`origin-coin`，回车，则添加第二个远程仓库成功，并取名为`origin-coin`,这时会提示Gitea的账号密码，输入回车即可。
+  注意这时不能在取为`origin`，我们取为`origin-coin`，回车，则添加第二个远程仓库成功，并取名为`origin-coin`,这时会提示 Gitea 的账号密码，输入回车即可。
   ![图2](./picture/深度截图_选择区域_20220630182606.png)
 
 - <font face="黑体" color=green size=5>步骤 3：在 VSCode 中 commit 刚刚改过的仓库。</font>
@@ -253,8 +253,10 @@ ssh -T git@github.com
 - <font face="黑体" color=green size=5>步骤 4：推送到第二个远程仓库</font>
 
   ![图2](./picture/深度截图_选择区域_20220630183352.png)
-
-  ![图2](./picture/.png)
+  这时就可以看到有两个远程仓库，一个是 GitHub 的 origin,另一个是 Gitea 的 origin-coin，选择第二个。
+  ![图2](./picture/深度截图_选择区域_20220630183627.png)
+  输入Gitea的账号密码。
+  ![图2](./picture/深度截图_选择区域_20220630183819.png)
 
 - <font face="黑体" color=green size=5>步骤 5：在 VSCode 中将本地文件夹初始化为仓库</font>
 
