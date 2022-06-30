@@ -252,7 +252,7 @@ ssh -T git@github.com
 
 - <font face="黑体" color=green size=5>步骤 4：推送到第二个远程仓库</font>
 
-  ![图2](./picture/.png)
+  ![图2](./picture/深度截图_选择区域_20220630183352.png)
 
   ![图2](./picture/.png)
 
