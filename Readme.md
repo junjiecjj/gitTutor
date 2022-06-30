@@ -190,6 +190,7 @@ ssh -T git@github.com
 
   ![图2](./picture/2022-06-30_13-50.png)
 
+- <font face="黑体" color=green size=5>步骤 2：添加远程仓库</font>
   然后选择 `添加远程仓库`
   ![图2](./picture/深度截图_选择区域_20220630135630.png)
 
@@ -200,20 +201,40 @@ ssh -T git@github.com
 
   ![图2](./picture/深度截图_选择区域_20220630140101.png)
 
-  此时回车，会让你在本地给远程仓库的取一个名称，输入 origin。
+- <font face="黑体" color=green size=5>步骤 3：给远程仓库的取名</font>
+  此时回车，会让你在本地给远程仓库的取一个名称，输入 origin，可以是任意的，但是如果有多个远程仓库，则各个远程仓库的名字不能一样。
   ![图2](./picture/深度截图_选择区域_20220630174958.png)
 
-  `从GitHub添加远程存储库`成功，接下来，需要将本地的代码先提交到本地仓库,先写一个关于代码更改的描述，然后点击勾勾:
+  `从GitHub添加远程存储库`成功，
+
+- <font face="黑体" color=green size=5>步骤 4：将本地的仓库 Commit</font>
+
+  接下来，需要将本地的代码先提交到本地仓库,先写一个关于代码更改的描述，然后点击勾勾:
   ![图2](./picture/深度截图_选择区域_20220630175152.png)
 
-  接下来推送。
-  ![图2](./picture/深度截图_选择区域_20220630175544.png)
+- <font face="黑体" color=green size=5>步骤 5：将本地 Commit 后的仓库推送到远程仓库</font>
+
   推送本地仓库到远程
   ![图2](./picture/深度截图_选择区域_20220630135405.png)
+  选择推送到哪个远程仓库，这时本地仓库只关联了一个远程仓库，稍后我们会设置关联第二个远程仓库。
+  ![图2](./picture/深度截图_选择区域_20220630175544.png)
+  左边可以看到提交历史：
+  ![图2](./picture/深度截图_选择区域_20220630180238.png)
+  完成.
 
-完成.
+一个本地仓库可以关联多个远程仓库，比如上述是建立了和 Github 上网址为`https://github.com/junjiecjj/gitTutor`取名为`origin`的远程连接，下面我们建立本地仓库与 Gitea 的另一个连接。
 
-一个本地仓库可以关联多个远程仓库，比如
+- <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
+
+- <font face="黑体" color=green size=5>步骤 2：在 VSCode 中将本地文件夹初始化为仓库</font>
+
+- <font face="黑体" color=green size=5>步骤 3：在 VSCode 中将本地文件夹初始化为仓库</font>
+
+- <font face="黑体" color=green size=5>步骤 4：在 VSCode 中将本地文件夹初始化为仓库</font>
+
+- <font face="黑体" color=green size=5>步骤 5：在 VSCode 中将本地文件夹初始化为仓库</font>
+
+- <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
 
 ### 使用 windows 命令行
 
