@@ -255,7 +255,7 @@ ssh -T git@github.com
   ![图2](./picture/深度截图_选择区域_20220630183352.png)
   这时就可以看到有两个远程仓库，一个是 GitHub 的 origin,另一个是 Gitea 的 origin-coin，选择第二个。
   ![图2](./picture/深度截图_选择区域_20220630183627.png)
-  输入Gitea的账号密码。
+  输入 Gitea 的账号密码,回车。
   ![图2](./picture/深度截图_选择区域_20220630183819.png)
 
 - <font face="黑体" color=green size=5>步骤 5：在 VSCode 中将本地文件夹初始化为仓库</font>
