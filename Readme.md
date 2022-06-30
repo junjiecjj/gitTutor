@@ -257,10 +257,10 @@ ssh -T git@github.com
   ![图2](./picture/深度截图_选择区域_20220630183627.png)
   输入 Gitea 的账号密码,回车。
   ![图2](./picture/深度截图_选择区域_20220630183819.png)
+  可以在 gitea 的网址上看到内容推送成功。
+  ![图2](./picture/深度截图_选择区域_20220630184112.png)
 
-- <font face="黑体" color=green size=5>步骤 5：在 VSCode 中将本地文件夹初始化为仓库</font>
-
-- <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
+  以上就是 VSCode 使用 Git 并推送到远程分支的内容。
 
 ### 使用 windows 命令行
 
