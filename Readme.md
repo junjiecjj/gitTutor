@@ -93,7 +93,7 @@ ssh -T git@github.com
 
 # 二、 结合远程仓库使用 git
 
-以下情况
+存在两种情况，第一种是想把本地的某个文件夹变为 git 仓库并推送到远程仓库，这时可以使用 VSCode 集成 git 实现，也可以使用终端实现，我们着重介绍使用 VSCode 实现和 Linux 下终端实现，至于 Windows 下终端实现是与 Linux 一致的，只不过终端不同。
 
 ## 情况 1：远程无仓库，新建本地仓库并上传
 
@@ -262,11 +262,11 @@ ssh -T git@github.com
 
   以上就是 VSCode 使用 Git 并推送到远程分支的内容。
 
-### 使用 windows 命令行
+### windows 下的命令行
 
 与 Linux 类似，只不过终端为 CMD 或者 PowerShell 或者 WSL。
 
-### Linux 下使用终端
+### Linux 下终端命令行
 
 步骤如下：
 
@@ -550,6 +550,10 @@ To github.com:junjiecjj/Demo.git
 <img src="git1.png" alt="图2" style="zoom:63%;" />
 
 ## 情况 2：远程仓库已有内容，下载并使用远程仓库
+
+### 使用 VSCode 拉取远程仓库
+
+### 终端命令行
 
 # 三、仅在本地使用 Git
 
