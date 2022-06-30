@@ -142,7 +142,7 @@ ssh -T git@github.com
       or
       https://github.com/junjiecjj/Demo.git
       Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-  
+
       …or create a new repository on the command line
       echo "# Demo" >> README.md
       git init
@@ -201,14 +201,15 @@ ssh -T git@github.com
   ![图2](./picture/深度截图_选择区域_20220630140101.png)
 
   此时回车，会让你在本地给远程仓库的取一个名称，输入 origin。
-  ![图2](./picture/深度截图_选择区域_20220630154259.png)
+  ![图2](./picture/深度截图_选择区域_20220630174958.png)
 
-  `从GitHub添加远程存储库`成功，接下来，需要将本地的代码先提交到本地仓库
+  `从GitHub添加远程存储库`成功，接下来，需要将本地的代码先提交到本地仓库,先写一个关于代码更改的描述，然后点击勾勾:
+  ![图2](./picture/深度截图_选择区域_20220630175152.png)
 
-接下来推送。
-
-推送本地仓库到远程
-![图2](./picture/深度截图_选择区域_20220630135405.png)
+  接下来推送。
+  ![图2](./picture/深度截图_选择区域_20220630175544.png)
+  推送本地仓库到远程
+  ![图2](./picture/深度截图_选择区域_20220630135405.png)
 
 完成
 
