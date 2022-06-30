@@ -8,11 +8,11 @@
 
 Windows10 用户，前往[Git 官网](https://git-scm.com/downloads)下载 Windows 版本的安装包 Git-2.37.0-64-bit.exe。
 
-![图2](2022-06-30_12-42.png)
+![图2](./picture/2022-06-30_12-42.png)
 
 点击`64-bit Git for Windows Setup.`
 
-![图2](2022-06-30_12-44.png)
+![图2](./picture/2022-06-30_12-44.png)
 
 双击下载下来的 Git-2.37.0-64-bit.exe 安装包，流程比较多，一直下一步，期间的一些可选项可参见[Git 自学（1）-- Win10 安装 Git 详细教程（超详细纯小白教程）
 ](https://www.cnblogs.com/ay2021/p/15023636.html)决定是否选中安装过程中的可选项。
@@ -21,7 +21,7 @@ Windows10 用户，前往[Git 官网](https://git-scm.com/downloads)下载 Windo
 
 安装完成后，需要在本地配置 Git 的用户信息。
 
-安装完 Git 之后，要做的第一件事就是设置你的用户名和邮件地址。 这一点很重要，因为每一个 Git 提交都会使用这些信息，它们会写入到你的每一次提交中，不可更改：
+安装完 Git 之后，要做的第一件事就是设置你的用户名和邮件地址。 这一点很重要，因为每一个 Git 提交都会使用这些信息，它们会写入到你的每一次提交中，不可更改,打开命令行或者 PowerShell,依次输入以下，其中的`sysu-desktop`需要改成你想要的名字，`123455667@qq.com`邮箱设置为你常用的邮箱.
 
 ```bash
 #设置你的git用户名及邮箱
@@ -71,13 +71,13 @@ drwxr-xr-x 86 jack jack 4.0K  9月 11 00:36 ../
 ### 将 ssh 配置到 github 中
 
 点击头像，选择 settings
-![图2](1.png)
+![图2](./picture/1.png)
 
-![图2](2.png)
+![图2](./picture/2.png)
 
-![图2](3.png)
+![图2](./picture/3.png)
 
-![图2](4.png)
+![图2](./picture/4.png)
 
 ### 检查是否配置成功
 
@@ -87,7 +87,7 @@ ssh -T git@github.com
 
 出现 👇 表示配置成功
 
-![图2](5.png)
+![图2](./picture/5.png)
 
 关于 Windows 下免密设置可见[win10 下 git 初始安装及配置工作](https://zhuanlan.zhihu.com/p/138722339)
 
@@ -102,7 +102,7 @@ ssh -T git@github.com
 ### 使用 VSCode
 
 - 使用 github 登录 VSCode。
-  ![图2](深度截图_选择区域_20220630140452.png)
+  ![图2](./picture/深度截图_选择区域_20220630140452.png)
 
 - 在远程仓库如 Github 或者 Gitea 上新建一个空的仓库，注意新建仓库时千万勾选 Add Readme.md 和 Add .gitignore。
 
@@ -120,9 +120,9 @@ ssh -T git@github.com
 
   一个仓库（ repository），类似于能储存物品的场所或是容器；在这里，我们创建仓库存储代码。在 `+` 符号（在插图的右上角，我已经选中它了） 的下拉菜单中选择 New Repository。
 
-  ![图片](2022-06-30_13-41.png)
+  ![图片](./picture/2022-06-30_13-41.png)
 
-  ![图片](2022-06-30_13-44.png)
+  ![图片](./picture/2022-06-30_13-44.png)
 
   给您的仓库命名（比如说，Demo）然后点击 Create Repository，无需考虑本页面的其他选项，<font face="黑体" color=red>特别是千万勾选`Add Readme.md`和`Add .gitignore`</font>。
 
@@ -186,28 +186,28 @@ ssh -T git@github.com
 
   打开 VSCode，依次：文件 $\longrightarrow$ 打开文件夹 $\longrightarrow$ 选择 gitTutor 文件夹，这时候可以看到 gitTutor 目录下的所有文件，然后点击左边的`初始化存储库`，如下图：
 
-  ![图2](2022-06-30_13-38.png)
+  ![图2](./picture/2022-06-30_13-38.png)
 
   点击完后如下图：
 
-  ![图2](2022-06-30_13-50.png)
+  ![图2](./picture/2022-06-30_13-50.png)
 
   然后选择 `添加远程仓库`
-  ![图2](深度截图_选择区域_20220630135630.png)
+  ![图2](./picture/深度截图_选择区域_20220630135630.png)
 
   选择`从GitHub添加远程存储库`
-  ![图2](深度截图_选择区域_20220630135932.png)
+  ![图2](./picture/深度截图_选择区域_20220630135932.png)
 
   选择`https://github.com/junjiecjj/gitTutor`
-  ![图2](深度截图_选择区域_20220630140101.png)
+  ![图2](./picture/深度截图_选择区域_20220630140101.png)
 
   此时回车，会让你选择远程仓库的名称，输入 origin。
-  ![图2](深度截图_选择区域_20220630154259.png)
+  ![图2](./picture/深度截图_选择区域_20220630154259.png)
 
   `从GitHub添加远程存储库`成功，接下来推送。
 
   推送本地仓库到远程
-  ![图2](深度截图_选择区域_20220630135405.png)
+  ![图2](./picture/深度截图_选择区域_20220630135405.png)
 
   完成
 
