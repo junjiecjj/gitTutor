@@ -140,32 +140,32 @@ ssh -T git@github.com
   当仓库创建完毕后，界面将和下方一致：
 
   ```bash
-      Quick setup — if you’ve done this kind of thing before
-      or
-      https://github.com/junjiecjj/Demo.git
-      Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-
-      …or create a new repository on the command line
-      echo "# Demo" >> README.md
-      git init
-      git add README.md
-      git commit -m "first commit"
-      git branch -M main
-      git remote add origin https://github.com/junjiecjj/Demo.git
-      git push -u origin main
-
-
-      …or push an existing repository from the command line
-      git remote add origin https://github.com/junjiecjj/Demo.git
-      git branch -M main
-      git push -u origin main
+        Quick setup — if you’ve done this kind of thing before
+        or
+        https://github.com/junjiecjj/Demo.git
+        Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+  
+        …or create a new repository on the command line
+        echo "# Demo" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/junjiecjj/Demo.git
+        git push -u origin main
 
 
-      …or import code from another repository
-      You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+        …or push an existing repository from the command line
+        git remote add origin https://github.com/junjiecjj/Demo.git
+        git branch -M main
+        git push -u origin main
+
+
+        …or import code from another repository
+        You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
   ```
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69ZjibomwXr64KElnstn6TfguJ6pyCHVuJkYnKOib4dBj3UCUj6x6picTQfpDScHKiaPphD7dYJkd4dZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![图片](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69ZjibomwXr64KElnstn6TfguJ6pyCHVuJkYnKOib4dBj3UCUj6x6picTQfpDScHKiaPphD7dYJkd4dZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 #### 在 VScode 中初始化本地仓库并推送到远程
 
@@ -224,7 +224,7 @@ ssh -T git@github.com
   ![图2](./picture/深度截图_选择区域_20220630180238.png)
   完成.
 
-**一个本地仓库可以关联多个远程仓库，比如上述是建立了和 Github 上网址为`https://github.com/junjiecjj/gitTutor`取名为`origin`的远程连接，下面我们建立本地仓库与 Gitea 的另一个连接。**
+**一个本地仓库可以关联多个远程仓库，比如上述是建立了和 Github 上网址为`https://github.com/junjiecjj/gitTutor`取名为`origin`的远程连接，下面我们建立本地仓库(也就是此文档所在仓库)与 Gitea 的另一个连接。**
 
 - <font face="黑体" color=green size=5>步骤 1：在 gitea 中新建一个空白仓库</font>
   ![图2](./picture/深度截图_选择区域_20220630181050.png)
