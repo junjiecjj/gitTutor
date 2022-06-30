@@ -97,14 +97,21 @@ ssh -T git@github.com
 
 ## 情况 1：远程无仓库，新建本地仓库并上传
 
-这种情况多半是想在本地文件夹新建一个仓库，然后在这个新仓库里写代码，并提交本地仓库，最后同步到远程仓库。
+这种情况多半是想在本地文件夹里写代码，并提交本地仓库，最后同步到远程仓库，最后提交远程。这里介绍常用的三种方法，第一是利用 VSCode 集成 Git，第二个是 Window 下使用命令行，第三个是在 Linux 下使用命令行，第二第三类似，只是操作终端不一样。
 
 ### 使用 VSCode
 
-- 使用 github 登录 VSCode。
-  ![图2](./picture/深度截图_选择区域_20220630140452.png)
+#### 首先安装 VSCode，并使用 github 登录 VSCode。
 
-- 在远程仓库如 Github 或者 Gitea 上新建一个空的仓库，注意新建仓库时千万勾选 Add Readme.md 和 Add .gitignore。
+![图2](./picture/深度截图_选择区域_20220630140452.png)
+
+#### 安装 VSCode 插件 GitLens
+
+![图2](./picture/深度截图_选择区域_20220630164249.png)
+
+#### 在远程仓库如 Github 或者 Gitea 上新建一个空的仓库
+
+这里以 GitHub 为例，Gitea 类似。注意在 GitHub 上新建仓库时千万勾选 Add Readme.md 和 Add .gitignore。
 
 - <font face="黑体" color=green size=5>步骤 1：</font> 申请一个 GitHub 账户
 
@@ -130,58 +137,49 @@ ssh -T git@github.com
 
   当仓库创建完毕后，界面将和下方一致：
 
-```bash
-    Quick setup — if you’ve done this kind of thing before
-    or
-    https://github.com/junjiecjj/Demo.git
-    Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-
-    …or create a new repository on the command line
-    echo "# Demo" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git branch -M main
-    git remote add origin https://github.com/junjiecjj/Demo.git
-    git push -u origin main
-
-
-    …or push an existing repository from the command line
-    git remote add origin https://github.com/junjiecjj/Demo.git
-    git branch -M main
-    git push -u origin main
+  ```bash
+      Quick setup — if you’ve done this kind of thing before
+      or
+      https://github.com/junjiecjj/Demo.git
+      Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+  
+      …or create a new repository on the command line
+      echo "# Demo" >> README.md
+      git init
+      git add README.md
+      git commit -m "first commit"
+      git branch -M main
+      git remote add origin https://github.com/junjiecjj/Demo.git
+      git push -u origin main
 
 
-    …or import code from another repository
-    You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+      …or push an existing repository from the command line
+      git remote add origin https://github.com/junjiecjj/Demo.git
+      git branch -M main
+      git push -u origin main
 
-```
+
+      …or import code from another repository
+      You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+  ```
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69ZjibomwXr64KElnstn6TfguJ6pyCHVuJkYnKOib4dBj3UCUj6x6picTQfpDScHKiaPphD7dYJkd4dZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-- 在 VScode 中初始化本地仓库并推送到远程
+#### 在 VScode 中初始化本地仓库并推送到远程
 
-  - <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
-    例如此教程的本地文件夹 `gitTutor` 目录组织如下：
+- <font face="黑体" color=green size=5>步骤 1：在 VSCode 中将本地文件夹初始化为仓库</font>
+  例如此教程的本地文件夹 `gitTutor` 目录组织如下：
 
   ```bash
-   ❯ ll
-   drwxrwxr-x⠀jack⠀jack⠀4.0K  ⠀Jun 30 13:33:33⠀ﱮ⠀.
-   drwxr-xr-x⠀jack⠀jack⠀4.0K  ⠀Jun 28 16:14:53⠀ﱮ⠀..
-   -rw-rw-r--⠀jack⠀jack⠀17.1K ⠀Jun 30 13:01:22⠀⠀1.png
-   -rw-rw-r--⠀jack⠀jack⠀64.6K ⠀Jun 30 13:01:41⠀⠀2.png
-   -rw-rw-r--⠀jack⠀jack⠀386.6K⠀Jun 30 12:42:25⠀⠀2022-06-30_12-42.png
-   -rw-rw-r--⠀jack⠀jack⠀312.2K⠀Jun 30 12:44:24⠀⠀2022-06-30_12-44.png
-   -rw-rw-r--⠀jack⠀jack⠀8.8K  ⠀Jun 30 13:01:52⠀⠀3.png
-   -rw-rw-r--⠀jack⠀jack⠀39.0K ⠀Jun 30 13:01:59⠀⠀4.png
-   -rw-rw-r--⠀jack⠀jack⠀13.3K ⠀Jun 30 13:16:41⠀⠀5.png
-   -rw-rw-r--⠀jack⠀jack⠀140.7K⠀Oct  3 01:09:41⠀⠀git1.png
-   -rw-rw-r--⠀jack⠀jack⠀20.4K ⠀Jun 30 13:34:49⠀⠀GitTutor.md
-
-   ╭─   ~/公共的/gitTutor                                                                                                                                                                        base at  13:35:04
-   ╰─❯
-
-
+  # jack @ XPS in ~/公共的/gitTutor [日期: 周四 6月 30日, 时间: 16:47:32]
+  $ ll
+  drwxrwxr-x⠀jack⠀jack⠀4.0K ⠀Jun 30 16:47:19⠀ﱮ⠀.
+  drwxr-xr-x⠀jack⠀jack⠀4.0K ⠀Jun 30 14:12:59⠀ﱮ⠀..
+  drwxrwxr-x⠀jack⠀jack⠀4.0K ⠀Jun 30 16:30:49⠀⠀.git/
+  drwxrwxr-x⠀jack⠀jack⠀4.0K ⠀Jun 30 16:42:54⠀⠀picture/
+  -rw-rw-r--⠀jack⠀jack⠀23.3K⠀Jun 30 16:47:19⠀⠀Readme.md
+  # jack @ XPS in ~/公共的/gitTutor [日期: 周四 6月 30日, 时间: 16:47:34]
+  $
   ```
 
   打开 VSCode，依次：文件 $\longrightarrow$ 打开文件夹 $\longrightarrow$ 选择 gitTutor 文件夹，这时候可以看到 gitTutor 目录下的所有文件，然后点击左边的`初始化存储库`，如下图：
@@ -198,18 +196,21 @@ ssh -T git@github.com
   选择`从GitHub添加远程存储库`
   ![图2](./picture/深度截图_选择区域_20220630135932.png)
 
-  选择`https://github.com/junjiecjj/gitTutor`
+  选择我们刚刚在 GitHub 上新建的仓库网址： `https://github.com/junjiecjj/gitTutor`
+
   ![图2](./picture/深度截图_选择区域_20220630140101.png)
 
-  此时回车，会让你选择远程仓库的名称，输入 origin。
+  此时回车，会让你在本地给远程仓库的取一个名称，输入 origin。
   ![图2](./picture/深度截图_选择区域_20220630154259.png)
 
-  `从GitHub添加远程存储库`成功，接下来推送。
+  `从GitHub添加远程存储库`成功，接下来，需要将本地的代码先提交到本地仓库
 
-  推送本地仓库到远程
-  ![图2](./picture/深度截图_选择区域_20220630135405.png)
+接下来推送。
 
-  完成
+推送本地仓库到远程
+![图2](./picture/深度截图_选择区域_20220630135405.png)
+
+完成
 
 ### 使用 windows 命令行
 
