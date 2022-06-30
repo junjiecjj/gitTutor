@@ -1,6 +1,6 @@
 [TOC]
 
-本文档是 Windows 系统下 git 相关使用方法和流程，包括：安装 git，创建 git 仓库，用命令行 Push 本地仓库至远程、Pull 远程仓库至本地，以及在 VSCode 中集成 Git，使用鼠标点击替换命令行。但不包括多人协同，多分支等相关操作。至于 Linux 系统下安装和配置类似，具体可见[Linux 下 git 使用简明教程](https://github.com/junjiecjj/MarkDown/blob/main/GitTutor.md)。
+本文档是 Windows 系统下 git 相关使用方法和流程，包括：安装 git，创建 git 仓库，用命令行 Push 本地仓库至远程、Pull 远程仓库至本地，以及在 VSCode 中使用 Git 将本地仓库关联一个或者多个远程仓库并进行 Commit 和 push 操作，使用鼠标点击替换命令行。但不包括多人协同，多分支等相关操作。至于 Linux 系统下安装和配置类似，具体可见[Linux 下 git 使用简明教程](https://github.com/junjiecjj/MarkDown/blob/main/GitTutor.md)。
 
 # 一、下载安装 Git
 
@@ -144,7 +144,7 @@ ssh -T git@github.com
         or
         https://github.com/junjiecjj/Demo.git
         Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-  
+
         …or create a new repository on the command line
         echo "# Demo" >> README.md
         git init
@@ -216,7 +216,7 @@ ssh -T git@github.com
 
 - <font face="黑体" color=green size=5>步骤 5：将本地 Commit 后的仓库推送到远程仓库</font>
 
-  推送本地仓库到远程
+  推送(push)本地仓库到远程
   ![图2](./picture/深度截图_选择区域_20220630135405.png)
   选择推送到哪个远程仓库，这时本地仓库只关联了一个远程仓库，稍后我们会设置关联第二个远程仓库。
   ![图2](./picture/深度截图_选择区域_20220630175544.png)
@@ -250,7 +250,7 @@ ssh -T git@github.com
   添加 comment,提示做过哪些更改,然后点击勾勾。
   ![图2](./picture/深度截图_选择区域_20220630183202.png)
 
-- <font face="黑体" color=green size=5>步骤 4：推送到第二个远程仓库</font>
+- <font face="黑体" color=green size=5>步骤 4：推送(push)本地仓库到第二个远程仓库</font>
 
   ![图2](./picture/深度截图_选择区域_20220630183352.png)
   这时就可以看到有两个远程仓库，一个是 GitHub 的 origin,另一个是 Gitea 的 origin-coin，选择第二个。
